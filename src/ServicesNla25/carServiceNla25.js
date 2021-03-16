@@ -9,9 +9,9 @@ export async function deleteCars(id){
     {
         method: 'DELETE',
         headers: {'Content-Type': 'application/json'},
-        body: deleteCars
+        body: deleteData
     })
-    .then(response=>resonse.json())
+    .then(response=>response.json())
 }
 
 export async function addCar(newCar){
@@ -21,7 +21,8 @@ export async function addCar(newCar){
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: carData
-    }).then(resonse=>resonse.json())
+    })
+    .then(resonse=>resonse.json())
 }
 
 export async function editcar(newCar){
@@ -31,6 +32,7 @@ export async function editcar(newCar){
         method: 'PUT',
         headers: {'Content-Type': 'application/json'},
         body: carData
-    }).then(response=>response.json())
+    })
+    .then(response=>response.json())
 }
 
